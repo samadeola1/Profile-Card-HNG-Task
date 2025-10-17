@@ -83,5 +83,5 @@ Each visible element in the card includes a `data-testid` attribute:
 
 👨‍💻 Author
 
-Samuel A. Deola
+Samuel ADeola
 Frontend Developer | HNG Internship
