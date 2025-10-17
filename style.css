@@ -1,0 +1,211 @@
+body {
+  background: linear-gradient(120deg, #f6f1eb 0%, #e9f5ec 100%);
+  font-family: 'Segoe UI', 'Roboto', Arial, sans-serif;
+  margin: 0;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+article[data-testid="test-profile-card"] {
+  background: #fffdf6;
+  border-radius: 1.2rem;
+  box-shadow: 0 8px 32px rgba(120, 144, 156, 0.10);
+  max-width: 700px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem 1.5rem;
+  gap: 0.8rem; 
+  word-break: break-word;
+}
+
+.divider {
+  border: none;
+  border-top: 1.5px solid #e0e0e0;
+  margin: 0.7rem 0 0.7rem 0;
+  width: 100%;
+}
+
+.profile-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem; 
+  width: 100%;
+  margin-bottom: 0.3rem; 
+}
+
+figure img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  border: 3px solid #b5c9a3;
+  box-shadow: 0 2px 8px rgba(120, 144, 156, 0.10);
+  object-fit: cover;
+  background: #e9f5ec;
+  transition: box-shadow 0.2s;
+}
+
+header h2 {
+  color: #7d8f69;
+  font-size: 1.7rem;
+  margin: 0 0 0 0.5rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.centered {
+  text-align: center;
+  width: 100%;
+}
+
+[data-testid="test-user-bio"] {
+  color: #5c5a57;
+  font-size: 1.08rem;
+  line-height: 1.6;
+  margin: 0.2rem 0 0.1rem 0;
+  word-break: break-word;
+  width: 100%;
+}
+
+.timestamp-badge {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #e9f5ec;
+  color: #7d8f69;
+  border-radius: 0.4rem;
+  padding: 0.3em 1em;
+  font-size: 1em;
+  font-weight: 600;
+  box-shadow: 0 1px 4px rgba(120, 144, 156, 0.07);
+  margin: 0.1em 0 0.2em 0;
+  letter-spacing: 0.5px;
+  border: 1.5px solid #b5c9a3;
+  min-width: 150px;
+  gap: 0.5em;
+}
+
+.clock-icon {
+  font-size: 1.1em;
+  margin-right: 0.5em;
+}
+
+.connect-heading {
+  color: #7d8f69;
+  font-size: 1.15rem;
+  font-weight: 600;
+  text-align: center;
+  margin: 0 0 0.3rem 0;
+  letter-spacing: 0.5px;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  margin: 0.2rem 0 0.2rem 0;
+}
+
+nav a {
+  color: #7d8f69;
+  background: #f6f1eb;
+  padding: 0.35rem 1rem;
+  border-radius: 0.7rem;
+  text-decoration: none;
+  font-weight: 500;
+  transition: background 0.2s, color 0.2s;
+  box-shadow: 0 1px 4px rgba(120, 144, 156, 0.07);
+}
+
+nav a:hover {
+  background: #b5c9a3;
+  color: #fff;
+}
+
+.cards-row {
+  display: flex;
+  gap: 1rem;
+  margin-top: 0.7rem;
+  width: 100%;
+  justify-content: center;
+}
+
+.card-section {
+  background: linear-gradient(120deg, #f6f1eb 60%, #e9f5ec 100%);
+  border-radius: 0.7rem;
+  box-shadow: 0 2px 12px rgba(120, 144, 156, 0.09);
+  padding: 1rem 1rem;
+  flex: 1 1 0;
+  min-width: 0;
+  max-width: 250px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: transform 0.15s, box-shadow 0.15s;
+  border-left: 4px solid #b5c9a3;
+}
+
+.card-section.dislikes {
+  border-left: 4px solid #7d8f69;
+  background: linear-gradient(120deg, #f6f1eb 60%, #fffdf6 100%);
+}
+
+.card-section h3 {
+  color: #7d8f69;
+  font-size: 1.1rem;
+  margin-bottom: 0.2rem;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+
+.card-section.dislikes h3 {
+  color: #b5c9a3;
+}
+
+.card-section ul {
+  padding-left: 1rem;
+  color: #5c5a57;
+  font-size: 1rem;
+  word-break: break-word;
+  margin: 0;
+}
+
+.card-section ul li {
+  margin-bottom: 0.15rem;
+}
+
+/* Responsive styles */
+@media (max-width: 699px) {
+  .profile-header {
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+    margin-bottom: 0.2rem;
+  }
+  .cards-row {
+    flex-direction: column;
+    gap: 0.7rem;
+    align-items: center;
+    margin-top: 0.5rem;
+  }
+  article[data-testid="test-profile-card"] {
+    padding: 1rem;
+    gap: 0.7rem;
+  }
+  nav ul {
+    flex-direction: column;
+    gap: 1rem;
+    margin: 0.1rem 0 0.1rem 0;
+  }
+  .card-section {
+    max-width: 100%;
+    width: 100%;
+    padding: 0.8rem 0.8rem;
+  }
+}

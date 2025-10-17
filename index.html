@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Profile Card - HNG Task</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <article data-testid="test-profile-card">
+    <div class="profile-header">
+      <figure>
+        <img 
+          src="/assets/heroimg-main.jpg" 
+          alt="User avatar" 
+          data-testid="test-user-avatar"
+          id="user-avatar"
+        />
+      </figure>
+      <header>
+        <h2 data-testid="test-user-name">Orogun Samuel Adeola</h2>
+      </header>
+    </div>
+
+    <hr class="divider" />
+
+    <p data-testid="test-user-bio" id="user-bio" class="centered">
+      I'm a Front-End Developer based in Lagos, passionate about creating beautiful and user-friendly web experiences. I enjoy exploring Web 3 and crypto, always curious about new trends and technologies. When I'm not coding, I love gaming and watching football.
+    </p>
+
+   
+
+    <div class="timestamp-badge" id="timestamp-badge">
+      <span class="clock-icon">⏰</span>
+      <span data-testid="test-user-time" id="user-time"></span>
+    </div>
+
+  
+
+    <h3 class="connect-heading">Connect with me</h3>
+    <nav data-testid="test-user-social-links" aria-label="Social media links" class="centered">
+      <ul>
+        <li><a href="https://x.com/Ade_ola00" target="_blank" rel="noopener noreferrer" data-testid="test-user-social-twitter">Twitter</a></li>
+        <li><a href="https://github.com/samadeola1" target="_blank" rel="noopener noreferrer" data-testid="test-user-social-github">GitHub</a></li>
+        <li><a href="https://www.linkedin.com/in/samuel-orogun-59ba87362/?trk=opento_sprofile_topcard" target="_blank" rel="noopener noreferrer" data-testid="test-user-social-linkedin">LinkedIn</a></li>
+      </ul>
+    </nav>
+
+   
+
+    <div class="cards-row">
+      <section class="card-section hobbies" data-testid="test-user-hobbies">
+        <h3>Hobbies</h3>
+        <ul>
+          <li>Football</li>
+          <li>Coding</li>
+          <li>Gaming</li>
+        </ul>
+      </section>
+      <section class="card-section dislikes" data-testid="test-user-dislikes">
+        <h3>Dislikes</h3>
+        <ul>
+          <li>Negtive folks</li>
+          <li>Traffic</li>
+          <li>Being Broke</li>
+        </ul>
+      </section>
+    </div>
+  </article>
+  <script src="script.js"></script>
+</body>
+</html>
