@@ -1,0 +1,59 @@
+# 🌟 Profile Card — HNG Task
+
+This is a responsive, accessible **Profile Card** component built with **HTML, CSS, and Vanilla JavaScript** as part of the HNG Frontend Task.  
+It follows semantic HTML best practices and includes all required `data-testid` attributes for automated testing.
+
+---
+
+## 🧠 Features
+
+- ✅ Semantic and accessible HTML structure  
+- ✅ Responsive layout for mobile, tablet, and desktop  
+- ✅ Real-time current time display in milliseconds (`Date.now()`)  
+- ✅ Avatar image with alt text and figure element  
+- ✅ Keyboard-focusable social links (open in new tabs)  
+- ✅ Lists for hobbies and dislikes  
+- ✅ Clean and modern UI design  
+
+---
+
+## 📸 Live Demo
+
+🔗 **Live Site:** [https://samadeola-profile-card.netlify.app/](https://samadeola-profile-card.netlify.app/)
+
+🔗 **GitHub Repo:** [https://github.com/samadeola1/Profile-Card-HNG-Task](https://github.com/samadeola1/Profile-Card-HNG-Task)
+
+---
+
+## 🧩 Tech Stack
+
+- **HTML5** — semantic markup  
+- **CSS3** — responsive layout with Flexbox  
+- **JavaScript (ES6)** — dynamic time rendering  
+
+---
+
+## 🧪 Data Test IDs (for automated testing)
+
+Each visible element in the card includes a `data-testid` attribute:
+
+| Element | Test ID |
+|----------|----------|
+| Profile Card Root | `test-profile-card` |
+| User Name | `test-user-name` |
+| Biography | `test-user-bio` |
+| Current Time (milliseconds) | `test-user-time` |
+| Avatar Image | `test-user-avatar` |
+| Social Links Container | `test-user-social-links` |
+| Individual Social Link | `test-user-social-<network>` (e.g. `test-user-social-twitter`) |
+| Hobbies List | `test-user-hobbies` |
+| Dislikes List | `test-user-dislikes` |
+
+---
+
+👨‍💻 Author
+
+Samuel A. Deola
+Frontend Developer | HNG Internship
+	•	🌐 Live Demo
+	•	💼 GitHub Profile
