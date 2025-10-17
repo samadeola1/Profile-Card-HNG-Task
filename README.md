@@ -51,9 +51,37 @@ Each visible element in the card includes a `data-testid` attribute:
 
 ---
 
+## 🚀 Setup
+
+1. **Clone this repository**
+   ```bash
+   git clone https://github.com/samadeola1/Profile-Card-HNG-Task.git
+   
+ 2.	Open the folder
+         ```bash
+        cd Profile-Card-HNG-Task
+    
+3.	Open the project in your browser
+        Just open the index.html file directly, or use a local server such as:
+         ```bash
+        npx live-server
+        (You can also preview it in VS Code using the “Live Server” extension.)
+
+    🧭 Accessibility & Responsiveness
+	•	Semantic HTML elements: <article>, <header>, <section>, <figure>, <nav>, etc.
+	•	Alt text included for avatar image
+	•	Focus styles visible for keyboard users
+	•	Responsive using media queries — stacked on mobile, side-by-side on desktop
+
+    🧰 Folder Structure
+    Profile-Card-HNG-Task/
+│
+├── index.html
+├── style.css
+├── script.js
+└── README.md
+
 👨‍💻 Author
 
 Samuel A. Deola
 Frontend Developer | HNG Internship
-	•	🌐 Live Demo
-	•	💼 GitHub Profile
