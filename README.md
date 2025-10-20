@@ -37,17 +37,30 @@ It follows semantic HTML best practices and includes all required `data-testid` 
 
 Each visible element in the card includes a `data-testid` attribute:
 
-| Element | Test ID |
-|----------|----------|
-| Profile Card Root | `test-profile-card` |
-| User Name | `test-user-name` |
-| Biography | `test-user-bio` |
-| Current Time (milliseconds) | `test-user-time` |
-| Avatar Image | `test-user-avatar` |
-| Social Links Container | `test-user-social-links` |
-| Individual Social Link | `test-user-social-<network>` (e.g. `test-user-social-twitter`) |
-| Hobbies List | `test-user-hobbies` |
-| Dislikes List | `test-user-dislikes` |
+
+| Section | Element | Test ID |
+|----------|----------|----------|
+| Profile | Profile Card Root | `test-profile-card` |
+| Profile | User Name | `test-user-name` |
+| Profile | Biography | `test-user-bio` |
+| Profile | Current Time (milliseconds) | `test-user-time` |
+| Profile | Avatar Image | `test-user-avatar` |
+| Profile | Social Links Container | `test-user-social-links` |
+| Profile | Individual Social Links | `test-user-social-<network>` (e.g. `test-user-social-twitter`) |
+| Profile | Hobbies List | `test-user-hobbies` |
+| Profile | Dislikes List | `test-user-dislikes` |
+| About | About Page | `test-about-page` |
+| About | Bio | `test-about-bio` |
+| About | Skills | `test-about-skills` |
+| About | Goals | `test-about-goals` |
+| About | Future Note | `test-about-future-note` |
+| About | Extra Thoughts | `test-about-extra` |
+| Contact | Name Input | `test-contact-name` |
+| Contact | Email Input | `test-contact-email` |
+| Contact | Subject Input | `test-contact-subject` |
+| Contact | Message Textarea | `test-contact-message` |
+| Contact | Submit Button | `test-contact-submit` |
+| Contact | Form Success Message | `test-contact-success` |
 
 ---
 
@@ -85,3 +98,5 @@ Each visible element in the card includes a `data-testid` attribute:
 
 Samuel Adeola
 Frontend Developer | HNG Internship
+
+This project is open-source and free to use under the HNG 13 Intership.
