@@ -3,70 +3,174 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Profile Card - HNG Task</title>
-  <link rel="stylesheet" href="style.css" />
+  <title>Profile-card</title>
+  <link rel="stylesheet" href="/style.css">
 </head>
 <body>
-  <article data-testid="test-profile-card">
-    <div class="profile-header">
-      <figure>
-        <img 
-          src="./assets/heroimg-main.jpg" 
-          alt="User avatar" 
-          data-testid="test-user-avatar"
-          id="user-avatar"
-        />
-      </figure>
-      <header>
-        <h2 data-testid="test-user-name">Orogun Samuel Adeola</h2>
-      </header>
+
+  <nav class="main-nav">
+    <div class="nav-content">
+      <button class="nav-btn active" data-target="profile-page">Profile</button>
+      <button class="nav-btn" data-target="about-page">About Me</button>
+      <button class="nav-btn" data-target="contact-page">Contact</button>
     </div>
+  </nav>
 
-    <hr class="divider" />
+  <div class="page-container" id="page-container">
 
-    <p data-testid="test-user-bio" id="user-bio" class="centered">
-      I'm a Front-End Developer based in Lagos, passionate about creating beautiful and user-friendly web experiences. I enjoy exploring Web 3 and crypto, always curious about new trends and technologies. When I'm not coding, I love gaming and watching football.
-    </p>
+    <section id="profile-page" class="page content-card block">
+      <article data-testid="test-profile-card" class="profile-article">
+        <div class="profile-header">
+          <figure>
+            <img
+              src="/assets/heroimg-main.jpg"
+              alt="User avatar"
+              data-testid="test-user-avatar"
+              id="user-avatar"
+              onerror="this.onerror=null;this.src='https://placehold.co/120x120/b5c9a3/fff?text=Avatar';"
+            />
+          </figure>
+          <header>
+            <h2 data-testid="test-user-name">Orogun Samuel Adeola</h2>
+          </header>
+        </div>
 
-   
+        <hr class="divider" />
 
-    <div class="timestamp-badge" id="timestamp-badge">
-      <span class="clock-icon">⏰</span>
-      <span data-testid="test-user-time" id="user-time"></span>
-    </div>
+        <p data-testid="test-user-bio" id="user-bio" class="centered user-bio-text">
+          I'm a Front-End Developer based in Lagos, passionate about creating beautiful and user-friendly web experiences. I enjoy exploring Web 3 and crypto, always curious about new trends and technologies. When I'm not coding, I love gaming and watching football.
+        </p>
 
-  
+        <div class="timestamp-badge" id="timestamp-badge">
+          <span class="clock-icon">⏰</span>
+          <span data-testid="test-user-time" id="user-time"></span>
+        </div>
 
-    <h3 class="connect-heading">Connect with me</h3>
-    <nav data-testid="test-user-social-links" aria-label="Social media links" class="centered">
-      <ul>
-        <li><a href="https://x.com/Ade_ola00" target="_blank" rel="noopener noreferrer" data-testid="test-user-social-twitter">Twitter</a></li>
-        <li><a href="https://github.com/samadeola1" target="_blank" rel="noopener noreferrer" data-testid="test-user-social-github">GitHub</a></li>
-        <li><a href="https://www.linkedin.com/in/samuel-orogun-59ba87362/?trk=opento_sprofile_topcard" target="_blank" rel="noopener noreferrer" data-testid="test-user-social-linkedin">LinkedIn</a></li>
+        <h3 class="connect-heading">Connect with me</h3>
+        <nav data-testid="test-user-social-links" aria-label="Social media links" class="centered">
+          <ul class="social-links">
+            <li><a href="https://x.com/Ade_ola00" target="_blank" rel="noopener noreferrer" data-testid="test-user-social-twitter">Twitter</a></li>
+            <li><a href="https://github.com/samadeola1" target="_blank" rel="noopener noreferrer" data-testid="test-user-social-github">GitHub</a></li>
+            <li><a href="https://www.linkedin.com/in/samuel-orogun-59ba87362/?trk=opento_sprofile_topcard" target="_blank" rel="noopener noreferrer" data-testid="test-user-social-linkedin">LinkedIn</a></li>
+          </ul>
+        </nav>
+
+        <div class="cards-row">
+          <section class="card-section hobbies" data-testid="test-user-hobbies">
+            <h3>Hobbies</h3>
+            <ul>
+              <li>Football</li>
+              <li>Coding</li>
+              <li>Gaming</li>
+            </ul>
+          </section>
+          <section class="card-section dislikes" data-testid="test-user-dislikes">
+            <h3>Dislikes</h3>
+            <ul>
+              <li>Negative folks</li>
+              <li>Traffic</li>
+              <li>Being Broke</li>
+            </ul>
+          </section>
+        </div>
+      </article>
+    </section>
+
+    <main id="about-page" class="page content-card hidden">
+  <div data-testid="test-about-page" class="about-content">
+    <h2 class="section-title">About Me</h2>
+
+    <section data-testid="test-about-bio" class="about-section border-secondary">
+      <h3 class="subsection-title">Who I Am</h3>
+      <p class="about-text">
+        I’m a Front-End Developer based in Lagos, Nigeria — passionate about building clean, responsive, and visually engaging digital experiences. 
+        I specialize in <strong>ReactJS</strong> and <strong>TailwindCSS</strong>, with a strong design sense shaped by my hands-on experience with <strong>Figma</strong>. 
+        My focus is turning ideas into functional, intuitive web interfaces that connect with people.
+      </p>
+    </section>
+
+    <section data-testid="test-about-skills" class="about-section border-primary">
+      <h3 class="subsection-title">What I Work With</h3>
+      <ul class="about-list">
+        <li>⚛️ Front-End: ReactJS, TypeScript, JavaScript (ES6+)</li>
+        <li>🎨 Styling: TuringCSS, TailwindCSS, modern responsive layouts</li>
+        <li>🧩 Tools: Figma, Git, Vite, VSCode, Netlify</li>
+        <li>🚀 Other: API integration, reusable component design, UI performance optimization</li>
       </ul>
-    </nav>
+    </section>
 
-   
+    <section data-testid="test-about-goals" class="about-section border-secondary">
+      <h3 class="subsection-title">My Goals</h3>
+      <ul class="about-list">
+        <li>Deepen my understanding of full-stack architecture and modern backend integration.</li>
+        <li>Build and launch production-ready web apps that solve real problems.</li>
+        <li>Contribute to open-source and collaborate with teams across borders.</li>
+        <li>Keep growing as a designer-minded developer who bridges creativity and logic.</li>
+      </ul>
+    </section>
 
-    <div class="cards-row">
-      <section class="card-section hobbies" data-testid="test-user-hobbies">
-        <h3>Hobbies</h3>
-        <ul>
-          <li>Football</li>
-          <li>Coding</li>
-          <li>Gaming</li>
-        </ul>
-      </section>
-      <section class="card-section dislikes" data-testid="test-user-dislikes">
-        <h3>Dislikes</h3>
-        <ul>
-          <li>Negtive folks</li>
-          <li>Traffic</li>
-          <li>Being Broke</li>
-        </ul>
-      </section>
-    </div>
-  </article>
+    <section data-testid="test-about-future-note" class="about-section border-primary">
+      <h3 class="subsection-title">Note to Future Self</h3>
+      <p class="about-text italic-text">
+        "Hey future Sam, remember this moment. It’s tough right now, but you’re building foundational knowledge. 
+        Be patient with the complex back-end stuff. Keep prioritizing clean code and stay curious. 
+        And seriously, take a break now and then — you’ll solve that bug faster after a walk!"
+      </p>
+    </section>
+
+    <section data-testid="test-about-extra" class="about-section border-secondary">
+      <h3 class="subsection-title">Extra Thoughts</h3>
+      <p class="about-text">
+        I love working with other developers, sharing knowledge, and growing together. 
+        Collaboration is where creativity really shines, and I believe great products come from great teamwork. 
+        Each project I work on is another chance to refine my craft and build something meaningful.
+      </p>
+    </section>
+  </div>
+</main>
+
+    <section id="contact-page" class="page content-card hidden">
+      <div class="contact-form-container">
+        <h2 class="section-title">Get in Touch</h2>
+
+        <div id="test-contact-success" class="success-message hidden" role="alert">
+          <p class="success-bold">Success!</p>
+          <p>Your message has been received. I will get back to you shortly.</p>
+        </div>
+
+        <form id="contact-form" class="contact-form">
+          <div>
+            <label for="contact-name" class="form-label">Full Name</label>
+            <input type="text" id="name" data-testid="test-contact-name" required class="form-input" aria-describedby="test-contact-error-name" placeholder="Name" />
+            <p id="name-error" data-testid="test-contact-error-name" class="error-message hidden" aria-live="polite"></p>
+          </div>
+
+          <div>
+            <label for="contact-email" class="form-label">Email</label>
+            <input type="email" id="email" data-testid="test-contact-email" required class="form-input" aria-describedby="test-contact-error-email" placeholder="Email" />
+            <p id="email-error" data-testid="test-contact-error-email" class="error-message hidden" aria-live="polite"></p>
+          </div>
+
+          <div>
+            <label for="contact-subject" class="form-label">Subject</label>
+            <input type="text" id="subject" data-testid="test-contact-subject" required class="form-input" aria-describedby="test-contact-error-subject" placeholder="Subject" />
+            <p id="subject-error" data-testid="test-contact-error-subject" class="error-message hidden" aria-live="polite"></p>
+          </div>
+
+          <div>
+            <label for="contact-message" class="form-label">Message (Min. 10 characters)</label>
+            <textarea id="message" data-testid="test-contact-message" rows="4" required class="form-input form-textarea" aria-describedby="test-contact-error-message" placeholder="Message"></textarea>
+            <p id="message-error" data-testid="test-contact-error-message" class="error-message hidden" aria-live="polite"></p>
+          </div>
+
+          <button type="submit" data-testid="test-contact-submit" class="form-submit-btn">
+            Send Message
+          </button>
+        </form>
+      </div>
+    </section>
+
+  </div>
   <script src="script.js"></script>
 </body>
 </html>
