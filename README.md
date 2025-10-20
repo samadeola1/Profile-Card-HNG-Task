@@ -19,7 +19,7 @@ It follows semantic HTML best practices and includes all required `data-testid` 
 
 ## 📸 Live Demo
 
-🔗 **Live Site:** (https://samadeola-profile-card.netlify.app/)
+🔗 **Live Site:** (https://profile-card-hng-task-phi.vercel.app/)
 
 🔗 **GitHub Repo:** (https://github.com/samadeola1/Profile-Card-HNG-Task)
 
