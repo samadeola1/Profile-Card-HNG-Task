@@ -34,20 +34,13 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   };
 
-  const updateTimestamp = () => {
-    if (timestampElement) {
-      const now = new Date();
-      const options = {
-        year: "numeric",
-        month: "short",
-        day: "numeric",
-        hour: "2-digit",
-        minute: "2-digit",
-      };
-      timestampElement.textContent = now.toLocaleDateString("en-US", options);
-    }
-  };
-
+const updateTimestamp = () => {
+  if (timestampElement) {
+    const now = new Date();
+    // Display current time in milliseconds
+    timestampElement.textContent = now.getTime(); // or Date.now()
+  }
+};
   const validateField = (input) => {
     const errorElement = document.getElementById(`${input.id}-error`);
     let isValid = true;
